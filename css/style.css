@@ -454,7 +454,35 @@ textarea {
   }
 
   .menu__block {
-    color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F5F5F5;
+    width: 560px;
+    height: 80px;
+    border-radius: 50px;
   }
 
+  .menu__block a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 9%; /* Костыль Исправить!!!! */
+  }
+
+  .button-services {
+    width: 249px;
+    height: 62px;
+    background: #EB5C28;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
+
+  .button-consulting {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
  
