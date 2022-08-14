@@ -585,3 +585,47 @@ textarea {
     color: #FFFFFF;
   }
  
+  .about__text {
+    max-width: 1828px;
+    height: 254px;
+    left: 46px;
+    margin-top: 78px;
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 50px;
+  }
+
+  .about__text p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 37px 74px;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    color: #202020;
+  }
+
+  .offerings {
+    margin-top: 99px;
+  }
+
+  .offerings h3 {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    color: #202020;
+    margin-bottom: 61px;
+  }
+
+  .offerings p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+    color: #202020;
+  }
