@@ -485,4 +485,20 @@ textarea {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .language__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 80px;
+    height: 161px;
+    background: #F5F5F5;
+    border-radius: 50px;
+  }
+
+  .lang-icon {
+    width: 50px;
+    height: 50px;
+  }
  
