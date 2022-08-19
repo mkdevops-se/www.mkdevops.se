@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Orbitron:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css"><title>IT Services When your company want to focus on business instead of IT!</title>
+        <link rel="stylesheet" href="assets/css/style.css"><title>IT Services When your company want to focus on business instead of IT!</title>
+        <?php wp_head(); ?>
     </head><body class="it-services"><div class="hero-screen">
         <div class="wrapper"><header class="d-flex flex-row">
             <div class="logo"><a class="logo-desktop" href="/">
                 <img src="img/logo.svg" alt="logo"> </a>
-                <a class="logo-mobile" href="/"><img src="img/logo-mobile.svg" alt="logo-mobile"></a>
+                <a class="logo-mobile" href="/"><img src="/img/logo-mobile.svg" alt="logo-mobile"></a>
             </div><nav class="nav"><ul class="nav-group-list">
                 <li class="nav-item active">It services</li>
                 <li class="nav-item">Consulting</li>
@@ -19,14 +20,14 @@
                 <ul id="lang-switch" class="lang-group-list">
                     <li class="lang-item">
                         <a class="lang-link" href="it-services-sweden.html">
-                         <img class="lang-icon-desktop" src="img/lang/sweden.svg" alt="sweden"> 
-                         <img class="lang-icon-mobile" src="img/lang/sweden-mobile.png" alt="sweden-mobile">
+                         <img class="lang-icon-desktop" src="/img/lang/sweden.svg" alt="sweden"> 
+                         <img class="lang-icon-mobile" src="/img/lang/sweden-mobile.png" alt="sweden-mobile">
                         </a>
                     </li>
                         <li class="lang-item">
                             <a class="lang-link" href="index.html">
-                                <img class="lang-icon-desktop" src="img/lang/eng.svg" alt="eng"> 
-                                <img class="lang-icon-mobile" src="img/lang/eng-mobile.png" alt="eng-mobile">
+                                <img class="lang-icon-desktop" src="/img/lang/eng.svg" alt="eng"> 
+                                <img class="lang-icon-mobile" src="/img/lang/eng-mobile.png" alt="eng-mobile">
                             </a>
                         </li>
                 </ul>
@@ -34,7 +35,7 @@
         </header>
     </div>
     <div class="hero-screen-label">
-        <img alt="label-hero" src="img/label.svg">
+        <img alt="label-hero" src="/img/label.svg">
     </div><div class="wrapper">
         <div class="hero-screen-content">
             <h1 class="hero-screen-title">IT Services</h1>
@@ -101,3 +102,4 @@
         </div></main>
         <footer></footer>
         <script src="js/scripts.js"></script><script src="js/secondary.js"></script></body></html>
+        <?php wp_footer(); ?>
