@@ -1,0 +1,28 @@
+{
+  "name": "mkd-wp-theme",
+  "private": true,
+  "version": "0.0.1",
+  "description": "WordPress Classic theme for Midsommarkransen DevOps AB company web site, initial iteration",
+  "author": "MKD",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "theme"
+  ],
+  "homepage": "https://github.com/mkdevops-se/www.mkdevops.se#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkdevops-se/www.mkdevops.se.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkdevops-se/www.mkdevops.se/issues"
+  },
+  "devDependencies": {
+    "@wordpress/stylelint-config": "^20.0.2",
+    "stylelint": "^14.10.0"
+  },
+  "scripts": {
+    "lint:css": "stylelint **/*.css -i .gitignore",
+    "lint:css:fix": "stylelint **/*.css -i .gitignore --fix"
+  }
+}
