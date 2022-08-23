@@ -1,6 +1,8 @@
 
 # [www.mkdevops.se](https://www.mkdevops.se) WordPress "Classic" Theme
 
+This project is based on [`Automattic/_s` (or `underscores`)](https://github.com/automattic/_s) starter theme.
+
 Project links:
 - [WordPress hosting, (staging-)www.mkdevops.se](https://github.com/mkdevops-se/hq.mkdevops.se)
 - [Jira project, MKDWEB](https://mblomdahl.atlassian.net/jira/software/projects/MKDWEB/boards/22/roadmap)
@@ -9,8 +11,8 @@ Project links:
 
 ## Getting Started
 
-Have [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Node.js](https://nodejs.org/en/download/), and
-[PHP 7](https://www.php.net/releases/7_0_0.php) installed, then
+Have [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Node.js](https://nodejs.org/en/download/),
+[PHP 7](https://www.php.net/releases/7_0_0.php), and [Composer](https://getcomposer.org/) installed, then
 install [wp-env](https://developer.wordpress.org/block-editor/getting-started/devenv/) globally:
 
     npm -g install @wordpress/env
@@ -19,7 +21,8 @@ Clone the Git repo and `npm install`:
 
     git clone git@github.com:mkdevops-se/www.mkdevops.se.git
     cd www.mkdevops.se/
-    git checkout feature/local-dev
+    git checkout feature/underscores.me-theme
+    composer install
     npm install
 
 Start the WordPress development site:

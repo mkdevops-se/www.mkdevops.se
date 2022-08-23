@@ -15,7 +15,12 @@ indent_style = tab
 indent_size = 4
 
 # Indentation for all JSON files
-[*.json]
+[{composer.json,.stylelintrc.json}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[{package.json,package-lock.json}]
 charset = utf-8
 indent_style = space
 indent_size = 2
