@@ -7,37 +7,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/styles.css" />
         <title>IT Services When your company want to focus on business instead of IT!</title>
+        <?php wp_head(); ?>
     </head>
     <body class="it-services">
         <div class="hero-screen">
             <div class="wrapper">
                 <header class="d-flex flex-row">
                     <div class="logo">
-                        <a class="logo-desktop" href="index.html"><img src="img/logo.svg" alt="logo" /> </a><a class="logo-mobile" href="index.html"><img src="img/logo-mobile.svg" alt="logo-mobile" /></a>
+                        <a class="logo-desktop" href="index.html"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="logo" /> </a><a class="logo-mobile" href="index.html"><img src="<?php bloginfo('template_directory'); ?>/img/logo-mobile.svg" alt="logo-mobile" /></a>
                     </div>
                     <nav class="nav">
                         <ul class="nav-group-list">
-                            <li class="nav-item active"><a href="index.html" class="nav-link">It services</a></li>
-                            <li class="nav-item"><a href="consulting-eng.html" class="nav-link">Consulting</a></li>
+                            <li class="nav-item active"><a href="<?php bloginfo('template_directory'); ?>/index.html" class="nav-link">It services</a></li>
+                            <li class="nav-item"><a href="<?php bloginfo('template_directory'); ?>/consulting-eng.html" class="nav-link">Consulting</a></li>
                         </ul>
                     </nav>
                     <div class="lang">
                         <ul id="lang-switch" class="lang-group-list">
                             <li class="lang-item">
-                                <a class="lang-link" href="index.html"><img class="lang-icon-desktop" src="img/lang/eng.svg" alt="eng" /> <img class="lang-icon-mobile" src="img/lang/eng-mobile.png" alt="eng-mobile" /></a>
+                                <a class="lang-link" href="<?php bloginfo('template_directory'); ?>/index.html"><img class="lang-icon-desktop" src="<?php bloginfo('template_directory'); ?>/img/lang/eng.svg" alt="eng" /> <img class="lang-icon-mobile" src="<?php bloginfo('template_directory'); ?>/mg/lang/eng-mobile.png" alt="eng-mobile" /></a>
                             </li>
                             <li class="lang-item">
-                                <a class="lang-link" href="it-services-sweden.html">
-                                    <img class="lang-icon-desktop" src="img/lang/sweden.svg" alt="sweden" /> <img class="lang-icon-mobile" src="img/lang/sweden-mobile.png" alt="sweden-mobile" />
+                                <a class="lang-link" href="<?php bloginfo('template_directory'); ?>/it-services-sweden.html">
+                                    <img class="lang-icon-desktop" src="<?php bloginfo('template_directory'); ?>/img/lang/sweden.svg" alt="sweden" /> <img class="lang-icon-mobile" src="<?php bloginfo('template_directory'); ?>/img/lang/sweden-mobile.png" alt="sweden-mobile" />
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </header>
             </div>
-            <div class="hero-screen-label"><img alt="label-hero" src="img/label.svg" /></div>
+            <div class="hero-screen-label"><img alt="label-hero" src="<?php bloginfo('template_directory'); ?>/img/label.svg" /></div>
             <div class="wrapper">
                 <div class="hero-screen-content">
                     <h1 class="hero-screen-title">IT Services</h1>
@@ -96,7 +97,8 @@
             </div>
         </main>
         <footer></footer>
-        <script src="js/scripts.js"></script>
-        <script src="js/switchToSwe.js"></script>
+        <script src="<?php bloginfo('template_directory'); ?>/js/scripts.js"></script>
+        <script src="<?php bloginfo('template_directory'); ?>/js/switchToSwe.js"></script>
     </body>
 </html>
+<?php wp_footer(); ?>

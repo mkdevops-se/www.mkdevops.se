@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/styles.css" />
         <title>A falsis, nutrix alter cedrium.</title>
     </head>
     <body class="it-services">
@@ -15,27 +15,29 @@
             <div class="wrapper">
                 <header class="d-flex flex-row">
                     <div class="logo">
-                        <a class="logo-desktop" href="/"><img src="img/logo.svg" alt="logo" /> </a><a class="logo-mobile" href="/"><img src="img/logo-mobile.svg" alt="logo-mobile" /></a>
+                        <a class="logo-desktop" href="https://staging-www.mkdevops.se/it-services-sweden.php"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="logo" /> </a><a class="logo-mobile" href="https://staging-www.mkdevops.se/it-services-sweden.php"><img src="<?php bloginfo('template_directory'); ?>/img/logo-mobile.svg" alt="logo-mobile" /></a>
                     </div>
                     <nav class="nav">
                         <ul class="nav-group-list">
-                            <li class="nav-item active">Quadras</li>
-                            <li class="nav-item">Virundum</li>
+                            <li class="nav-item active"><a class="nav-link" href="it-services-sweden.php">Quadras</a></li>
+                            <li class="nav-item"><a class="nav-link" href="consulting-sweden.php">Virundum</a></li>
                         </ul>
                     </nav>
                     <div class="lang">
                         <ul id="lang-switch" class="lang-group-list">
                             <li class="lang-item">
-                                <a class="lang-link" href="#"><img class="lang-icon-desktop" src="img/lang/sweden.svg" alt="sweden" /> <img class="lang-icon-mobile" src="img/lang/sweden-mobile.png" alt="sweden-mobile" /></a>
+                                <a class="lang-link" href="https://staging-www.mkdevops.se/it-services-sweden.php">
+                                    <img class="lang-icon-desktop" src="<?php bloginfo('template_directory'); ?>/img/lang/sweden.svg" alt="sweden" /> <img class="lang-icon-mobile" src="<?php bloginfo('template_directory'); ?>/img/lang/sweden-mobile.png" alt="sweden-mobile" />
+                                </a>
                             </li>
                             <li class="lang-item">
-                                <a class="lang-link" href="#"><img class="lang-icon-desktop" src="img/lang/eng.svg" alt="eng" /> <img class="lang-icon-mobile" src="img/lang/eng-mobile.png" alt="eng-mobile" /></a>
+                                <a class="lang-link" href="index.php"><img class="lang-icon-desktop" src="<?php bloginfo('template_directory'); ?>/img/lang/eng.svg" alt="eng" /> <img class="lang-icon-mobile" src="<?php bloginfo('template_directory'); ?>/img/lang/eng-mobile.png" alt="eng-mobile" /></a>
                             </li>
                         </ul>
                     </div>
                 </header>
             </div>
-            <div class="hero-screen-label"><img alt="label-hero" src="img/label.svg" /></div>
+            <div class="hero-screen-label"><img alt="label-hero" src="<?php bloginfo('template_directory'); ?>/img/label.svg" /></div>
             <div class="wrapper">
                 <div class="hero-screen-content">
                     <h1 class="hero-screen-title">Boreass pereg</h1>
@@ -97,6 +99,6 @@
         </main>
         <footer></footer>
         <script src="js/scripts.js"></script>
-        <script src="js/secondary.js"></script>
+        <script src="js/switchToSwe.js"></script>
     </body>
 </html>
