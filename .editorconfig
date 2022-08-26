@@ -3,24 +3,25 @@
 # The top-most EditorConfig file
 root = true
 
-# Trim trailing whitespace + newline ending every file
+# Trim trailing whitespace
 [*]
-insert_final_newline = true
 trim_trailing_whitespace = true
 
 # Tab indentation per https://developer.wordpress.org/coding-standards/wordpress-coding-standards/html/#indentation
 [*.{php,html,css,js}]
+insert_final_newline = true
 charset = utf-8
 indent_style = tab
 indent_size = 4
 
-# Indentation for all JSON files
-[{composer.json,.stylelintrc.json}]
+[{composer.json,.stylelintrc.json,.eslintrc}]
+insert_final_newline = true
 charset = utf-8
 indent_style = space
 indent_size = 4
 
 [{package.json,package-lock.json}]
+insert_final_newline = true
 charset = utf-8
 indent_style = space
 indent_size = 2
