@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package www.mkdevops.se
+ * @package mkdevops.se
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function www_mkdevops_se_body_classes( $classes ) {
+function mkdevops_se_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -24,14 +24,14 @@ function www_mkdevops_se_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'www_mkdevops_se_body_classes' );
+add_filter( 'body_class', 'mkdevops_se_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function www_mkdevops_se_pingback_header() {
+function mkdevops_se_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 	}
 }
-add_action( 'wp_head', 'www_mkdevops_se_pingback_header' );
+add_action( 'wp_head', 'mkdevops_se_pingback_header' );

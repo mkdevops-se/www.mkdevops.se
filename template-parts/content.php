@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package www.mkdevops.se
+ * @package mkdevops.se
  */
 
 ?>
@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				www_mkdevops_se_posted_on();
-				www_mkdevops_se_posted_by();
+				mkdevops_se_posted_on();
+				mkdevops_se_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php www_mkdevops_se_post_thumbnail(); ?>
+	<?php mkdevops_se_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -37,7 +37,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'www-mkdevops-se' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mkdevops-se' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -50,7 +50,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'www-mkdevops-se' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mkdevops-se' ),
 				'after'  => '</div>',
 			)
 		);
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php www_mkdevops_se_entry_footer(); ?>
+		<?php mkdevops_se_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package www.mkdevops.se
+ * @package mkdevops.se
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function www_mkdevops_se_jetpack_setup() {
+function mkdevops_se_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'www_mkdevops_se_infinite_scroll_render',
+			'render'    => 'mkdevops_se_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function www_mkdevops_se_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'www-mkdevops-se-style',
+				'stylesheet' => 'mkdevops-se-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function www_mkdevops_se_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'www_mkdevops_se_jetpack_setup' );
+add_action( 'after_setup_theme', 'mkdevops_se_jetpack_setup' );
 
-if ( ! function_exists( 'www_mkdevops_se_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'mkdevops_se_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function www_mkdevops_se_infinite_scroll_render() {
+	function mkdevops_se_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

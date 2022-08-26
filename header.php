@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package www.mkdevops.se
+ * @package mkdevops.se
  */
 
 ?>
@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'www-mkdevops-se' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'mkdevops-se' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
@@ -38,15 +38,15 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$www_mkdevops_se_description = get_bloginfo( 'description', 'display' );
-			if ( $www_mkdevops_se_description || is_customize_preview() ) :
+			$mkdevops_se_description = get_bloginfo( 'description', 'display' );
+			if ( $mkdevops_se_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $www_mkdevops_se_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<p class="site-description"><?php echo $mkdevops_se_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'www-mkdevops-se' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mkdevops-se' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(

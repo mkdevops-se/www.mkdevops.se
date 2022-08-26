@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package www.mkdevops.se
+ * @package mkdevops.se
  */
 
 get_header();
