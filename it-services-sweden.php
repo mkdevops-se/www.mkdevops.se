@@ -97,6 +97,6 @@
         </main>
         <footer></footer>
         <script src="js/scripts.js"></script>
-        <script src="js/secondary.js"></script>
+        <script src="js/switchToSwe.js"></script>
     </body>
 </html>
