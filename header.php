@@ -13,9 +13,14 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/styles.css" />
+        <title>IT Services When your company want to focus on business instead of IT!</title>
 
 	<?php wp_head(); ?>
 </head>
