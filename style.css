@@ -47,6 +47,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
+# www.mkdevops.se Customizations
+	- Header
+	- Front Page
+	- 404 Page
+	- Content Page
+	- Search
+	- Footer
 
 --------------------------------------------------------------*/
 
@@ -1431,4 +1438,73 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+
+/*--------------------------------------------------------------
+# www.mkdevops.se Customizations
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+.site-header .site-description {
+	display: none;
+}
+
+/* Front Page
+--------------------------------------------- */
+
+.site-header .site-branding .front-page {
+	display: none;
+}
+
+article#www-mkdevops-se-construction {
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-image: url("/wp-content/themes/www.mkdevops.se/img/logo-bg.png");
+	background-color: floralwhite;
+	background-attachment: fixed;
+}
+
+article#www-mkdevops-se-construction > div {
+	max-width: 90%;
+	margin-top: 10%;
+	position: fixed;
+	left: 10%;
+	right: 10%;
+}
+
+article#www-mkdevops-se-construction h1 {
+	font-size: xx-large;
+}
+
+article#www-mkdevops-se-construction p {
+	font-size: x-large;
+}
+
+
+/* 404 Page
+--------------------------------------------- */
+
+
+/* Content Page
+--------------------------------------------- */
+
+
+/* Search
+--------------------------------------------- */
+
+
+/* Footer
+--------------------------------------------- */
+
+footer.site-footer {
+	display: none;
 }
