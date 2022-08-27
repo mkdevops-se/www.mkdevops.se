@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mkdevops.se
+ * @package www.mkdevops.se
  */
 
 ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'mkdevops-se' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'www-mkdevops-se' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -21,7 +21,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'mkdevops-se' ),
+					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'www-mkdevops-se' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -34,14 +34,14 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'mkdevops-se' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'www-mkdevops-se' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'mkdevops-se' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'www-mkdevops-se' ); ?></p>
 			<?php
 			get_search_form();
 

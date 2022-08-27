@@ -1,5 +1,5 @@
 {
-  "name": "mkdevops.se-wordpress-theme",
+  "name": "www.mkdevops.se-wordpress-theme",
   "private": true,
   "version": "0.0.1",
   "description": "WordPress Classic theme for Midsommarkransen DevOps AB company web site, initial iteration",
@@ -9,13 +9,13 @@
     "WordPress",
     "Theme"
   ],
-  "homepage": "https://github.com/mkdevops-se/mkdevops.se#readme",
+  "homepage": "https://github.com/mkdevops-se/www.mkdevops.se#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkdevops-se/mkdevops.se.git"
+    "url": "git+https://github.com/mkdevops-se/www.mkdevops.se.git"
   },
   "bugs": {
-    "url": "https://github.com/mkdevops-se/mkdevops.se/issues"
+    "url": "https://github.com/mkdevops-se/www.mkdevops.se/issues"
   },
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
