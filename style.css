@@ -1448,6 +1448,10 @@ body {
 /* Header
 --------------------------------------------- */
 
+.site-header .site-title {
+	display: none;
+}
+
 .site-header .site-description {
 	display: none;
 }
@@ -1457,6 +1461,10 @@ body {
 
 .site-header .site-branding .front-page {
 	display: none;
+}
+
+body.home {
+	margin: 0;
 }
 
 article#www-mkdevops-se-construction {
@@ -1487,6 +1495,10 @@ article#www-mkdevops-se-construction h1 {
 
 article#www-mkdevops-se-construction p {
 	font-size: x-large;
+}
+
+article#www-mkdevops-se-construction p a {
+	word-break: keep-all;
 }
 
 
