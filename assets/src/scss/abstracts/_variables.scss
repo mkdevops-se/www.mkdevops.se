@@ -1,0 +1,52 @@
+//colors
+$primary: #EB5C28;
+$secondary: #5D8240;
+$black: #202020;
+$white: #FFFFFF;
+
+//font
+
+$montserrat: 'Montserrat', sans-serif;
+$orbitron: 'Orbitron', sans-serif;
+
+//font-weight
+
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+//font-size
+
+$h1: 150px;
+$h2: 45px;
+$text: 35px;
+$nav: 22px;
+
+//font-line-height
+
+$h1-lh: 188px;
+$h2-lh: 56px;
+$text-lh: 60px;
+$nav-lh: 27px;
+
+//mixins
+
+@mixin font($font-family-variable, $font-weight-variable, $font-size-variable, $line-height-variable, $color-variable) {
+  font-family: $font-family-variable;
+  font-weight: $font-weight-variable;
+  font-size: $font-size-variable;
+  line-height: $line-height-variable;
+  color: $color-variable;
+}
+
+@mixin link {
+  cursor: pointer;
+  color: $primary;
+  text-decoration: underline;
+}
+
+@mixin linkGreen {
+  cursor: pointer;
+  color: $secondary;
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+header {
+  padding-top: 27px;
+}
+
+footer {
+  padding-bottom: 27px;
+}
+
+.wrapper {
+  max-width: 1680px;
+  margin: 0 auto;
+  //desktop
+  @media screen and (max-width: 1680px){
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @media screen and (max-width: 1336px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  //tablet
+  @media screen and (max-width: 1199px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  //mobile
+  @media screen and (max-width: 767px) {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
