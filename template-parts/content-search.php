@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package mkdevops.se
+ * @package www.mkdevops.se
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			mkdevops_se_posted_on();
-			mkdevops_se_posted_by();
+			www_mkdevops_se_posted_on();
+			www_mkdevops_se_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php mkdevops_se_post_thumbnail(); ?>
+	<?php www_mkdevops_se_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php mkdevops_se_entry_footer(); ?>
+		<?php www_mkdevops_se_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package mkdevops.se
+ * @package www.mkdevops.se
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses mkdevops_se_header_style()
+ * @uses www_mkdevops_se_header_style()
  */
-function mkdevops_se_custom_header_setup() {
+function www_mkdevops_se_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'mkdevops_se_custom_header_args',
+			'www_mkdevops_se_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'mkdevops_se_header_style',
+				'wp-head-callback'   => 'www_mkdevops_se_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'mkdevops_se_custom_header_setup' );
+add_action( 'after_setup_theme', 'www_mkdevops_se_custom_header_setup' );
 
-if ( ! function_exists( 'mkdevops_se_header_style' ) ) :
+if ( ! function_exists( 'www_mkdevops_se_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see mkdevops_se_custom_header_setup().
+	 * @see www_mkdevops_se_custom_header_setup().
 	 */
-	function mkdevops_se_header_style() {
+	function www_mkdevops_se_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
